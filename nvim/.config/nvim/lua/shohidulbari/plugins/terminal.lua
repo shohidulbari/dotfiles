@@ -4,7 +4,7 @@ return {
     version = "*",
     opts = {
       size = 70,
-      open_mapping = [[<leader>/]],
+      open_mapping = [[<leader>1]],
       shade_terminals = true,
       auto_scroll = false,
       direction = "horizontal",
