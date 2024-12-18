@@ -35,7 +35,7 @@ alias lmspwd='ssh -L 2024:128.140.82.157:2024 sb@128.140.82.157'
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 alias tmuxa='tmux attach-session -t'
-alias tmuxn='tmux new-session -t'
+alias tmuxn='tmux new-session -s'
 alias tmuxk='tmux kill-session -t'
 
 #eval "$(starship init zsh)"
