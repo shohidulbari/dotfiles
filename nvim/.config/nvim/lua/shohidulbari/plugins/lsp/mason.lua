@@ -5,6 +5,7 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
   },
   config = function()
+    vim.lsp.buf.format({ timeout_ms = 10000 })
     -- import mason
     local mason = require("mason")
 

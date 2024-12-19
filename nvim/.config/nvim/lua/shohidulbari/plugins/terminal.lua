@@ -3,11 +3,10 @@ return {
     "akinsho/toggleterm.nvim",
     version = "*",
     opts = {
-      size = 70,
-      open_mapping = [[<leader>1]],
+      open_mapping = [[<leader><leader>]],
       shade_terminals = true,
       auto_scroll = false,
-      direction = "horizontal",
+      direction = "float",
       on_open = function(term)
         local winid = term.window
         vim.wo[winid].signcolumn = "no"
