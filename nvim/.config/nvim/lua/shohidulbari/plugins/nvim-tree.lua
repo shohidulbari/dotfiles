@@ -14,7 +14,7 @@ return {
         update_cwd = true,
       },
       view = {
-        width = 35,
+        width = 70,
         relativenumber = true,
         side = "right",
       },
