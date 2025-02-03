@@ -65,6 +65,7 @@ return {
           { "fileformat" },
           { "filetype" },
         },
+        lualine_c = { { "filename", path = 1 } },
       },
     })
   end,
