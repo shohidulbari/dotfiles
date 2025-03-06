@@ -39,7 +39,8 @@ return {
         "prismals",
         "ruff",
         "pyright",
-      },
+        "gopls",
+     },
     })
 
     mason_tool_installer.setup({
@@ -50,6 +51,7 @@ return {
         "black", -- python formatter
         "pylint",
         "eslint_d",
+        "flake8"
       },
     })
   end,
