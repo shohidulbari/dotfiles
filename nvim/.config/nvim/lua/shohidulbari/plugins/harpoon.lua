@@ -68,9 +68,5 @@ return {
     vim.keymap.set("n", "<leader>ff", function()
       toggle_telescope(harpoon:list())
     end, { desc = "Open harpoon window" })
-
-    vim.keymap.set("n", "<leader>fr", function()
-      harpoon:list():remove()
-    end, { desc = "Remove Current file from harpoon" })
   end,
 }
