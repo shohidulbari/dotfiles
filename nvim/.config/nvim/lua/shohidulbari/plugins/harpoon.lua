@@ -44,10 +44,10 @@ return {
           prompt_title = "Harpoon",
           finder = finder(),
           sorter = require("telescope.config").values.generic_sorter({}),
-          previewer = false,
+          previewer = require("telescope.config").values.file_previewer({}),
           layout_config = {
-            width = 0.6, -- Overall width (relative to screen)
-            height = 0.4, -- Overall height (relative to screen)
+            width = 0.8, -- Overall width (relative to screen)
+            height = 0.8, -- Overall height (relative to screen)
             prompt_position = "bottom", -- "top", "bottom"
           },
           attach_mappings = function(prompt_bufnr, map)
