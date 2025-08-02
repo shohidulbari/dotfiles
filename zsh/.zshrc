@@ -1,18 +1,5 @@
 export PATH=/opt/homebrew/bin:$PATH
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-export COMPOSE_DOCKER_CLI_BUILD=1
-export PATH="/opt/homebrew/opt/libxml2/bin:$PATH"
-eval "$(/opt/homebrew/bin/brew shellenv)"
-export PATH="/opt/homebrew/opt/libxslt/bin:$PATH"
-
 source ~/.nvm/nvm.sh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -32,3 +19,7 @@ alias ncu='nc-docker up'
 alias localdev='pyenv activate localdev'
 alias cmp='nc-docker up cmp-client'
 alias ncps='nc-docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"'
+
+alias w-logs='(cd - && make logs web-api)'
+alias p-logs='(cd - && make logs public-api)'
+export PATH=$PATH:$(go env GOPATH)/bin
