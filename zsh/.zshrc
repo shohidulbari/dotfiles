@@ -12,6 +12,7 @@ alias find_port='sudo lsof -i'
 #eval "$(starship init zsh)"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=$PATH:$(go env GOPATH)/binexport PATH="$HOME/.local/bin:$PATH"
+export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="$HOME/.local/bin:$PATH"
 
 alias logs='docker compose logs "$@" -ft'
