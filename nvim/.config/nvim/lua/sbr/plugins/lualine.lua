@@ -65,6 +65,13 @@ return {
           { "fileformat", symbols = { unix = "" } },
           { "filetype" },
         },
+        lualine_c = {
+          {
+            "filename",
+            file_status = true,
+            path = 1,
+          },
+        },
       },
     })
   end,
