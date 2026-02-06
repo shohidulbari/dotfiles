@@ -4,15 +4,15 @@ return {
   version = "*",
   opts = {
     options = {
-      mode = "tabs",
-      offsets = {
-        {
-          filetype = "NvimTree",
-          text = "File Explorer",
-          text_align = "left",
-          separator = true,
-        },
-      },
+      mode = "buffers",
     },
   },
+  config = function(_, opts)
+    require("bufferline").setup(opts)
+
+    local keymap = vim.keymap -- for conciseness
+
+    keymap.set("n", "<S-h>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
+    keymap.set("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
+  end,
 }
