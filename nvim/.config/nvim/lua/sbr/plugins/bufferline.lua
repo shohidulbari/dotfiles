@@ -5,6 +5,7 @@ return {
   opts = {
     options = {
       mode = "buffers",
+      numbers = "buffer_id",
     },
   },
   config = function(_, opts)
