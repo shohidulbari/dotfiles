@@ -9,7 +9,7 @@ return {
   lazy = false, -- neo-tree will lazily load itself
   config = function()
     local keymap = vim.keymap
-    keymap.set("n", "/", ":Neotree toggle current reveal_force_cwd<CR>")
+    keymap.set("n", "<leader>e", ":Neotree toggle current reveal_force_cwd<CR>")
     keymap.set("n", "|", ":Neotree reveal<CR>")
     keymap.set("n", "gd", ":Neotree float reveal_file=<cfile> reveal_force_cwd<CR>")
     require("neo-tree").setup({
